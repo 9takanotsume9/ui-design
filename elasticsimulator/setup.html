@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elastic Simulator</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="inner">
+            <h1>ESIM</h1>
+            <nav>
+                <ul>
+                    <li>Top</li>
+                    <li>Setup</li>
+                    <li>Search</li>
+                    <li>Analyze</li>
+                    <li>Summary</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- setup -->
+    <div id="setup" class="inner">
+        <div id="setup-left">
+            <div class="setup-left-menu">
+                <div class="tab-header">
+                    <p class="tab-title">Source Index</p>
+                </div>
+                <div class="tab-wrapper">
+                    <ul id="setup-index-items">
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                        <li class="setup-index-item">search_keywords_202222222<div class="btn-delete"></div></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setup-left-menu">
+                <div class="tab-header">
+                    <p class="tab-title">Create New Index</p>
+                </div>
+                <div class="tab-wrapper">
+                    <form action="#">
+                        <dl class="setup-create-index">
+                            <dt>Source</dt>
+                            <dd><input class="setup-create-new" type="text" value="search_keywords_202222222"></dd>
+                        </dl>
+                        <dl class="setup-create-index">
+                            <dt>New</dt>
+                            <dd><input class="setup-create-new" type="text" placeholder="Enter new index name"></dd>
+                        </dl>
+                        <dl class="setup-create-index">
+                            <dt>Initializer</dt>
+                            <dd><input class="setup-create-new" type="text" placeholder="Enter json file name"></dd>
+                        </dl>
+                        <input id="setup-create-exe" type="submit" value="Create Tmp Index" class="btn-exe">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="setup-right">
+            <div id="editor"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.4/ace.js"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.setFontSize(14);
+        editor.getSession().setMode("ace/mode/json");
+        editor.getSession().setTabSize(2);
+        editor.setHighlightActiveLine(true);
+    </script>
+
+</body>
+</html>
