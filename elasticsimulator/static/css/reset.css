@@ -19,18 +19,58 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-html{overflow-y: scroll;}
-blockquote, q {quotes: none;}
-blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
-input, textarea,{margin: 0; padding: 0;}
-ol, ul{list-style:none;}
-table{border-collapse: collapse; border-spacing:0;}
-caption, th{text-align: left;}
-a:focus {outline:none;}
+
+html {
+	overflow-y: scroll;
+
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+input, textarea {
+	margin: 0;
+	padding: 0;
+}
+
+ol, ul {
+	list-style:none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing:0;
+}
+
+caption, th {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:focus {
+	outline:none;
+}
+
+input:focus {
+	outline: 0;
+}
 
 /* micro clearfix */
 .cf:before,
@@ -38,5 +78,11 @@ a:focus {outline:none;}
     content: " ";
     display: table;
 }
-.cf:after {clear: both;}
-.cf {*zoom: 1;}
+
+.cf:after {
+	clear: both;
+}
+
+.cf {
+	*zoom: 1;
+}
