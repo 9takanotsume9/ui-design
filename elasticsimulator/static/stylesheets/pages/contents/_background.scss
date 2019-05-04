@@ -1,0 +1,43 @@
+#main-bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(0.25turn, #9E66F2, #61AFE8);
+}
+
+#main-bg-overlay-rectangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 10vh;
+  background: $color-light;
+}
+
+#main-bg-overlay-triangle {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 10vw 100vw;
+  border-color: transparent;
+  border-bottom-color: $color-light;
+}
+
+#main-bg-overlay-workspace {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100vw;
+  height: 90vh;
+  transform: translateY(-48%);
+  background: $color-light;
+}
+
+.bg-item {
+  background: rgba(213, 213, 213, 0.2);
+  border-radius: 0.5vw;
+}

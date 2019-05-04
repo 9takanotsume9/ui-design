@@ -1,0 +1,58 @@
+#top-title-wrapper {
+  position: absolute;
+  top: 45%;
+  left: 10vw;
+  width: 50vw;
+  max-width: 1400px;
+  height: 60vh;
+  transform: translate(0, -50%);
+  // background: rgba(255,255,255,0.5);
+}
+
+#top-title {
+  color: $color-light;
+  font-size: 3vw;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+#top-title-caption {
+  color: $color-light;
+  font-size: 1.5vw;
+  line-height: 3vw;
+  margin-bottom: 36px;
+}
+
+#form-connect-port-num {
+  margin-right: 20px;
+}
+
+#top-img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50vw;
+  height: 100vh;
+  // background: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+#top-img-small {
+  // 1:1.27
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 20vw;
+  height: calc(20vw * 1.27);
+  transform: rotate(-7deg);
+}
+
+#top-img-large {
+  // 1:1.27
+  position: absolute;
+  top: 35%;
+  right: -2%;
+  width: 24vw;
+  height: calc(24vw * 1.27);
+  transform: rotate(-7deg);
+}

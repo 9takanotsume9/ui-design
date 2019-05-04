@@ -1,5 +1,8 @@
-@import "setting/**";
-@import "mixin/**";
-@import "base/**";
-@import "module/**";
-@import "page/**";
+@charset "utf-8";
+
+@import "init/**";
+@import "theme/settings/**";
+@import "theme/_apply.scss";
+@import "parts/**";
+@import "pages/contents/**";
+@import "pages/_render.scss";

@@ -1,0 +1,81 @@
+*::-webkit-scrollbar {
+  display:none;
+}
+
+body {
+	font-family: $ff-base;
+	font-size: $fz-base;
+	font-weight: $fw-base;
+	color: $cr-txt;
+	line-height: $lh-base;
+	background: $cr-bg;
+}
+
+table {
+	border: 1px solid $cr-table;
+}
+
+th,
+td {
+	border: 1px solid $cr-table;
+}
+
+// input,
+// textarea {
+// 	border: 1px solid $cr-outline;
+
+// 	&:focus {
+// 		border: 1px solid $cr-outline-on;
+// 	}
+// }
+
+input {
+
+	&[type="radio"] {
+
+		+ span {
+
+			&::before {
+				border: 1px solid $cr-outline;
+			}
+
+			&:focus,
+			&:checked {
+				background: $cr-check;
+			}
+		}
+
+		&:checked + span {
+
+			&::after {
+				background: $cr-check;
+			}
+		}
+	}
+
+	&[type="checkbox"] {
+
+		+ span {
+
+			&::before {
+				border: 1px solid $cr-outline;
+			}
+		}
+
+		&:checked + span {
+
+			&::after {
+				border-left: 3px solid $cr-check;
+				border-bottom: 3px solid $cr-check;
+			}
+		}
+	}
+}
+
+select {
+	border: 1px solid $cr-outline;
+
+	&:focus {
+		border: 1px solid $cr-outline-on;
+	}
+}

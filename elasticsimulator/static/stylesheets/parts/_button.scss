@@ -1,0 +1,82 @@
+// ====================================
+// basic button
+// ====================================
+
+@mixin btn($width, $height, $tc, $bg, $br, $bw, $fs, $bg-hover, $fc-hover) {
+  display: inline-block;
+  width: $width;
+  height: $height;
+  background: $bg;
+  border: $bw solid $tc;
+  border-radius: $br;
+  color: $tc;
+  cursor: pointer;
+  font-size: $fs;
+  text-align: center;
+  transition: 0.2s;
+
+  &:hover {
+    background: $bg-hover;
+    color: $fc-hover;
+  }
+}
+
+.btn-yellow {
+  @include btn(15vw, 3.6vw, $color-yellow, transparent, 100vw, 0.1vh, 1.5vw, $color-yellow, $color-dark);
+  line-height: 3.6vw;
+}
+
+.btn-purple {
+  @include btn(10vw, 5vh, $color-purple, transparent, 100vw, 0.1vh, 1vw, $color-purple, $color-light);
+}
+
+// ====================================
+// icon button using fontawesome
+// ====================================
+
+@mixin btn-icon($width, $height, $bg-color, $content, $fc, $fs) {
+  position: relative;
+  width: $width;
+  height: $height;
+  background: $bg-color;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: $content;
+    color: $fc;
+    font-family: $ff-awesome;
+    font-size: $fs;
+    font-weight: 900;
+  }
+}
+
+.btn-icon-delete-top {
+  @include btn-icon(2vw, 2vw, transparent,"\f00d", $color-red, 1vw);
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+}
+
+.btn-icon-delete-center {
+  @include btn-icon(2vw, 100%, transparent,"\f00d", $color-red, 1vw);
+  position: absolute;
+  top: 0vw;
+  right: 1vw;
+}
+
+.btn-icon-create {
+  @include btn-icon(2vw, 2vw, transparent,"\f067", $color-green, 1vw);
+  margin: 0 auto;
+}
+
+.btn-icon-pulldown {
+  @include btn-icon(2vw, 100%, transparent,"\f0d7", $color-dark, 1vw);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 50% 50% 0;
+}

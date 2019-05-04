@@ -1,0 +1,22 @@
+// ====================================
+// input area
+// ====================================
+
+@mixin input-area($width, $height, $tc, $br, $bw, $fs, $fc-ph) {
+  width: $width;
+  height: $height;
+  font-size: $fs;
+  background: transparent;
+  border: $bw solid $tc;
+  border-radius: $br;
+  color: $tc;
+  text-align: center;
+  
+  &::placeholder {
+    color: $fc-ph;
+  }
+}
+
+.input-area-simple {
+  @include input-area(15vw, 3.6vw, $color-light, 100vw, 0.1vh, 1.5vw, $color-placeholder)
+}

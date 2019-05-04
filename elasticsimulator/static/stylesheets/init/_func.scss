@@ -1,0 +1,5 @@
+// 割り算
+@function division($size, $size2) {
+
+	@return $size / $size2;
+}

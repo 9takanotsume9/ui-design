@@ -11,14 +11,8 @@ body {
 }
 
 body {
-	font-family: $ff-base;
-	font-size: $fz-base;
-	font-weight: $fw-base;
-	color: $cr-txt;
-	line-height: $lh-base;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background: $cr-bg;
 	overflow-x: hidden;
 }
 
@@ -130,7 +124,6 @@ table {
 	border-spacing: 0;
 	width: 100%;
 	table-layout: fixed;
-	border: 1px solid $cr-table;
 }
 
 th,
@@ -138,7 +131,6 @@ td {
 	padding: 4px 6px;
 	text-align: left;
 	vertical-align: top;
-	border: 1px solid $cr-table;
 }
 
 blockquote,
@@ -157,7 +149,6 @@ q::before {
 input,
 textarea {
 	padding: 8px;
-	border: 1px solid $cr-outline;
 	border-radius: 0;
 	background-image: none;
 	font-family: inherit;
@@ -166,7 +157,6 @@ textarea {
 
 	&:focus {
 		outline: none;
-		border: 1px solid $cr-outline-on;
 		box-shadow: none;
 	}
 }
@@ -179,7 +169,7 @@ input {
 
 	&[type="submit"] {
 		cursor: pointer;
-		border: none;
+		// border: none;
 
 		&:hover,
 		&:focus {
@@ -210,7 +200,6 @@ input {
 				left: 0;
 				transform: translateY(-50%);
 				background: #fff;
-				border: 1px solid $cr-outline;
 				border-radius: 50%;
 				width: 1em;
 				height: 1em;
@@ -227,7 +216,6 @@ input {
 				outline: none;
 				border: 1px solid #fff;
 				box-shadow: none;
-				background: $cr-check;
 			}
 		}
 
@@ -239,7 +227,6 @@ input {
 				top: 50%;
 				left: 0.2em;
 				transform: translateY(-50%);
-				background: $cr-check;
 				border-radius: 50%;
 				width: 0.6em;
 				height: 0.6em;
@@ -267,7 +254,6 @@ input {
 				left: 0;
 				transform: translateY(-50%);
 				background: #fff;
-				border: 1px solid $cr-outline;
 				border-radius: 2px;
 				width: 1em;
 				height: 1em;
@@ -292,8 +278,6 @@ input {
 				height: 0.6em;
 				margin-top: -0.2em;
 				display: block;
-				border-left: 3px solid $cr-check;
-				border-bottom: 3px solid $cr-check;
 				opacity: 1;
 			}
 		}
@@ -305,7 +289,6 @@ select {
 	padding: 8px 24px 8px 8px;
 	border-radius: 0;
 	background-image: none;
-	border: 1px solid $cr-outline;
 	font-family: inherit;
 	font-size: 1em;
 	cursor: pointer;
@@ -318,7 +301,6 @@ select {
 
 	&:focus {
 		outline: none;
-		border: 1px solid $cr-outline-on;
 		box-shadow: none;
 	}
 }
